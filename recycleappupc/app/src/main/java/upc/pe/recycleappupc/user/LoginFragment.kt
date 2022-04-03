@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.Toast
 import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -43,6 +44,7 @@ class LoginFragment : Fragment() {
             userContrasena = binding.editContraseA
             if(userEmail.text.isEmpty() || userContrasena.text.isEmpty()){
                Log.e("Tag","Ingrese los datos correctos")
+                Toast.makeText(context,"Ingrese los datos correctos",Toast.LENGTH_SHORT).show();
             } else {
                 inicioSesion(userEmail, userContrasena, it)
             }
@@ -55,7 +57,7 @@ class LoginFragment : Fragment() {
     private fun inicioSesion(email: EditText, contrasena: EditText, view: View) {
         val mEmail = email.text.toString()
         val mContrasena = contrasena.text.toString()
-        if (mEmail.isNotEmpty() && mContrasena.isNotEmpty()) {
+        if (mEmail.isNotEmpty() || mContrasena.isNotEmpty()) {
             auth.signInWithEmailAndPassword(mEmail, mContrasena)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
@@ -63,8 +65,15 @@ class LoginFragment : Fragment() {
                         view.findNavController().navigate(R.id.actionHome)
                     } else {
                         Log.e("Tag","No se ha podido Iniciar Sesión",it.exception)
+                        Toast.makeText(context,"No se ha podido Iniciar Sesión", Toast.LENGTH_SHORT).show()
                     }
                 }
+        }
+        if (mEmail.isEmpty()){
+            email.error = "Tiene que insertar un email"
+        }
+        else if (mContrasena.isEmpty()){
+            contrasena.error = "Tiene que insertar la contraseña"
         }
     }
 

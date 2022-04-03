@@ -8,4 +8,8 @@
     <string name="iniciarsesion">Iniciar Sesion</string>
     <string name="txtemail">Email</string>
     <string name="email">name@example.com</string>
+    <string name="lateral_menu">Imagen de Menu Lateral</string>
+    <string name="puntos_verdes">Puntos Verdes</string>
+    <string name="reconocer">Reconocer</string>
+    <string name="estadisticas">Estadisticas</string>
 </resources>

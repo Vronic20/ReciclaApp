@@ -61,9 +61,8 @@
                     android:background="#FFFFFF"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:hint=" Nombre"
-                    android:minHeight="48dp"
-                    android:text="Name" />
+                    android:hint=" Name"
+                    android:minHeight="48dp" />
 
                 <TextView
                     android:id="@+id/txtEmail"
@@ -127,7 +126,7 @@
                     android:layout_height="58dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@color/BtnInicio"
+                    android:backgroundTint="@color/BtnInicio"
                     android:text="Registrar"
                     android:textColor="#FFFF"
                     tools:ignore="TextContrastCheck" />
@@ -154,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:background="@android:color/holo_red_dark"
+                    android:backgroundTint="@android:color/holo_red_dark"
                     android:text="Google"
                     tools:ignore="TextContrastCheck" />
 
@@ -164,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:background="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/holo_blue_dark"
                     android:text="Facebook"
                     tools:ignore="TextContrastCheck" />
 

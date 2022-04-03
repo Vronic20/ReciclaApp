@@ -33,7 +33,7 @@
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@tools:sample/avatars" />
 
                 <TextView
                     android:id="@+id/txtRecycle"
@@ -133,7 +133,7 @@
                     android:layout_height="58dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@color/BtnInicio"
+                    android:backgroundTint="@color/BtnInicio"
                     android:text="Ingresar"
                     android:textColor="#FFFF"
                     tools:ignore="TextContrastCheck" />
@@ -160,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:background="@android:color/holo_red_dark"
+                    android:backgroundTint="@android:color/holo_red_dark"
                     android:text="Google"
                     tools:ignore="TextContrastCheck" />
 
@@ -170,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:background="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/holo_blue_dark"
                     android:text="Facebook" />
 
             </LinearLayout>
@@ -181,7 +181,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
                 android:gravity="center"
                 android:text="Registrarme"
                 android:textColor="@color/black" />

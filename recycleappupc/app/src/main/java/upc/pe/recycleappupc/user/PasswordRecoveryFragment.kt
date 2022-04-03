@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -35,6 +36,7 @@ class PasswordRecoveryFragment : Fragment() {
         binding.btnRecuperar.setOnClickListener{
             if(correo.isEmpty()) {
                 Log.e("Tag","Ingrese el correo correctamente")
+                Toast.makeText(context,"Ingrese el correo correctamente", Toast.LENGTH_SHORT).show();
             } else {
                 enviarCorreo(correo.toString(),it)
             }
@@ -53,6 +55,7 @@ class PasswordRecoveryFragment : Fragment() {
                 } else
                  {
                     Log.e("Tag","No se ha podido enviar el correo",it.exception)
+                     Toast.makeText(context,"No se ha podido enviar el correo",Toast.LENGTH_SHORT).show();
                  }
             }
         }

@@ -25,7 +25,7 @@ class PasswordRecoverySuccessFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnVolverInicio2.setOnClickListener(){
-            it.findNavController().navigate(R.id.actionReturnLog)
+            it.findNavController().navigate(R.id.actionReturnLogin)
         }
 
     }

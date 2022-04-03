@@ -11,13 +11,25 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/actionRegisterUser"
-            app:destination="@id/registerFragment" />
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/actionPasswordRecover"
-            app:destination="@id/passwordRecoveryFragment" />
+            app:destination="@id/passwordRecoveryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/actionHome"
-            app:destination="@id/homeActivity" />
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -26,7 +38,11 @@
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/actionRegisterSuccess"
-            app:destination="@id/registerSuccess" />
+            app:destination="@id/registerSuccess"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/registerSuccess"
@@ -35,7 +51,11 @@
         tools:layout="@layout/fragment_registersuccess" >
         <action
             android:id="@+id/actionReturnLog"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/passwordRecoveryFragment"
@@ -44,7 +64,11 @@
         tools:layout="@layout/fragment_password_recovery" >
         <action
             android:id="@+id/actionPasswRecovSuccess"
-            app:destination="@id/passwordRecoverySuccessFragment" />
+            app:destination="@id/passwordRecoverySuccessFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <activity
         android:id="@+id/homeActivity"
@@ -57,6 +81,10 @@
         android:label="PasswordRecoverySuccessFragment" >
         <action
             android:id="@+id/actionReturnLogin"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 </navigation>
