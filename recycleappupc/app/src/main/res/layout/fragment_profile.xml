@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfece5"
+    tools:context=".user.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[Nombre]"
+            android:textSize="34sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miraflores"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnAlarma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/black"
+            android:text="Alarmas" />
+
+        <Button
+            android:id="@+id/btnIndicadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/black"
+            android:text="Indicadores" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/black"
+            android:text="Cerrar Sesion" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

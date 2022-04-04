@@ -5,31 +5,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import upc.pe.recycleappupc.R
-import upc.pe.recycleappupc.databinding.FragmentProductBinding
+import upc.pe.recycleappupc.databinding.FragmentSearchedProductBinding
 
 
-class ProductFragment : Fragment() {
+class SearchedProductFragment : Fragment() {
 
-
-    private lateinit var binding: FragmentProductBinding
+    private lateinit var binding: FragmentSearchedProductBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentProductBinding.inflate(inflater)
+        binding = FragmentSearchedProductBinding.inflate(inflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.editBuscar.setOnClickListener{
-            it.findNavController().navigate(R.id.actionRecyclableProd)
-        }
+
     }
 
 }

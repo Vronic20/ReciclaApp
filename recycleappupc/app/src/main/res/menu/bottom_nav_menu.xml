@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id = "@+id/ItemGreenPoints"
+        android:title="@string/puntos_verdes"
+        android:icon="@drawable/ic_location"
+
+        />
+    <item android:id = "@+id/ItemReconocer"
+        android:title="@string/reconocer"
+        android:icon="@drawable/ic_camera"
+        />
+    <item android:id="@+id/ItemStatistics"
+        android:title="@string/estadisticas"
+        android:icon="@drawable/ic_estadisticas"
+        />
+</menu>
