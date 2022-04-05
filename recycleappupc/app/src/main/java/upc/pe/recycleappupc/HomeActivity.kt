@@ -18,14 +18,14 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        verificarPermisoUbicacion()
+        //verificarPermisoUbicacion()
 
-        binding.imagenMenuHome.setOnClickListener {
+       /* binding.imagenMenuHome.setOnClickListener {
             it.findNavController().navigate(R.id.actionProfile)
-        }
+        }*/
     }
 
-    private fun verificarPermisoUbicacion() {
+   /* private fun verificarPermisoUbicacion() {
         val permisoUbicacion = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION);
 
         if(permisoUbicacion == PackageManager.PERMISSION_GRANTED)
@@ -40,6 +40,5 @@ class HomeActivity : AppCompatActivity() {
 
     private fun permisoRechazado() {
         TODO("Not yet implemented")
-    }
-
+    }*/
 }
