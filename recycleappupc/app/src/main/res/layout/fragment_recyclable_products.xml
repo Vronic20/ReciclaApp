@@ -34,7 +34,10 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:tooltipText="Plastico"
+                    />
+
 
                 <ImageView
                     android:id="@+id/imageView2"

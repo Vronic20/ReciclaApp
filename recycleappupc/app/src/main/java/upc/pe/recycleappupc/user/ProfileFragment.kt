@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import upc.pe.recycleappupc.R
 import upc.pe.recycleappupc.databinding.FragmentProfileBinding
 
 
@@ -32,6 +34,7 @@ class ProfileFragment : Fragment() {
 
         binding.btnCerrarSesion.setOnClickListener {
             auth.signOut()
+            it.findNavController().navigate(R.id.actionLogin)
             Toast.makeText(context,"Sesión Cerrada",Toast.LENGTH_LONG).show()
         }
     }
