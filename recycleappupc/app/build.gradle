@@ -42,8 +42,9 @@ apply plugin: 'com.google.gms.google-services'
 dependencies {
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    def lifecycle_version = "2.3.1"
-    def nav_version = "2.3.1"
+    def lifecycle_version = "2.4.1"
+    def nav_version = "2.4.2"
+    def camerax_version = "1.1.0-beta02"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -74,4 +75,10 @@ dependencies {
     def retrofit_version = "2.9.0"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    //CameraX
+    implementation("androidx.camera:camera-core:${camerax_version}")
+    implementation("androidx.camera:camera-lifecycle:${camerax_version}")
+    implementation("androidx.camera:camera-view:${camerax_version}")
+    implementation("androidx.camera:camera-camera2:${camerax_version}")
 }

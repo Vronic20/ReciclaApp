@@ -26,6 +26,13 @@
         <action
             android:id="@+id/actionCollectionPoints"
             app:destination="@id/collectionPointsFragment2" />
+        <action
+            android:id="@+id/actionCamera"
+            app:destination="@id/cameraActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <activity
         android:id="@+id/profileActivity"
@@ -51,4 +58,9 @@
         android:name="upc.pe.recycleappupc.dataproduct.SearchedProductFragment"
         android:label="fragment_searched_product"
         tools:layout="@layout/fragment_searched_product" />
+    <activity
+        android:id="@+id/cameraActivity"
+        android:name="upc.pe.recycleappupc.CameraActivity"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
 </navigation>

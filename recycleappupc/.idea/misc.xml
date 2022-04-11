@@ -13,13 +13,15 @@
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1935" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/drawable/ic_location.xml" value="0.2595" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/drawable/ic_out.xml" value="0.2595" />
+        <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/drawable/ic_photo.xml" value="0.174" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/drawable/ic_search.xml" value="0.218" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/drawable/ic_share.xml" value="0.2595" />
+        <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/activity_camera.xml" value="0.16510416666666666" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/activity_h2.xml" value="0.16510416666666666" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/activity_main.xml" value="0.128" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/activity_profile.xml" value="0.16510416666666666" />
-        <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/fragment_camera.xml" value="0.16304347826086957" />
+        <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/fragment_camera.xml" value="0.1" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/fragment_collection_points.xml" value="0.16304347826086957" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/fragment_home.xml" value="0.16510416666666666" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/layout/fragment_login.xml" value="0.1" />

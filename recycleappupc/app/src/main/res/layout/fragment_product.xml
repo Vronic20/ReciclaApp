@@ -12,21 +12,20 @@
         android:id="@+id/LinearLayout10"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:gravity="center_vertical"
         android:background="@color/FondoAplicacion"
-        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
-        >
+        tools:ignore="MissingConstraints">
 
         <ImageButton
             android:id="@+id/imagenMenuHome"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_lateral_menu_bar"
             android:contentDescription="@string/lateral_menu"
-            />
+            android:src="@drawable/ic_lateral_menu_bar" />
 
     </LinearLayout>
 
