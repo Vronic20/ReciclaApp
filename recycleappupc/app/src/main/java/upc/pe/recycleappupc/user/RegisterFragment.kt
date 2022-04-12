@@ -80,7 +80,7 @@ class RegisterFragment : Fragment() {
             contrasena.error = "Tiene que insertar la contraseña"
         }
         else if (!PatternsCompat.EMAIL_ADDRESS.matcher(mCorreo).matches()){
-            correo.error = "No ha insertado una contraseña válida"
+            correo.error = "No ha insertado un email válido"
         }
         else if(!passwordRegex.matcher(mContrasena).matches())
         {

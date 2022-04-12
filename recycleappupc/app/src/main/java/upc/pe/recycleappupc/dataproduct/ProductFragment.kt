@@ -32,8 +32,6 @@ class ProductFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         binding.imagenMenuHome.setOnClickListener {
              it.findNavController().navigate(R.id.actionProfile)
          }
@@ -42,9 +40,10 @@ class ProductFragment : Fragment() {
         binding.editBuscar.setOnClickListener{
             it.findNavController().navigate(R.id.actionRecyclableProd)
         }
+
+        binding.btnEscanear.setOnClickListener {
+            it.findNavController().navigate(R.id.actionCamera)
+        }
     }
-
-
-
 
 }
