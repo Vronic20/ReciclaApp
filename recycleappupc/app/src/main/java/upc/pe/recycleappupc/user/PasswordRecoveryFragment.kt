@@ -54,8 +54,8 @@ class PasswordRecoveryFragment : Fragment() {
                  view.findNavController().navigate(R.id.actionPasswRecovSuccess)
                 } else
                  {
-                    Log.e("Tag","No se ha podido enviar el correo",it.exception)
-                     Toast.makeText(context,"No se ha podido enviar el correo",Toast.LENGTH_SHORT).show();
+                    Log.e("Tag","El correo no se encuentra registrado",it.exception)
+                     Toast.makeText(context,"El correo no se encuentra registrado",Toast.LENGTH_SHORT).show();
                  }
             }
         }

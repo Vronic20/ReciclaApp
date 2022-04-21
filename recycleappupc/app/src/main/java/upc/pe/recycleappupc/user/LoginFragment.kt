@@ -2,14 +2,17 @@ package upc.pe.recycleappupc.user
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
+import androidx.annotation.NonNull
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import upc.pe.recycleappupc.R
@@ -60,23 +63,34 @@ class LoginFragment : Fragment() {
         if (mEmail.isNotEmpty() || mContrasena.isNotEmpty()) {
             auth.signInWithEmailAndPassword(mEmail, mContrasena)
                 .addOnCompleteListener {
+
+
                     if (it.isSuccessful) {
                         Log.d("Tag","Se ha logrado iniciar sesion")
                         view.findNavController().navigate(R.id.actionHome)
-                    } else {
+                    }else {
                         Log.e("Tag","No se ha podido Iniciar Sesión",it.exception)
-                        Toast.makeText(context,"No se ha podido Iniciar Sesión", Toast.LENGTH_SHORT).show()
+
+                        if (it.exception is FirebaseAuthInvalidCredentialsException){
+                            Toast.makeText(context,"La contraseña es incorrecta", Toast.LENGTH_SHORT).show()}
+                        else if (it.exception !is FirebaseAuthUserCollisionException){
+
+                            Toast.makeText(context,"El correo ingresado es inválido", Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
         }
+
         if (mEmail.isEmpty()){
             email.error = "Tiene que insertar un email"
         }
         else if (mContrasena.isEmpty()){
             contrasena.error = "Tiene que insertar la contraseña"
         }
-    }
 
+
+
+    }
     public override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
