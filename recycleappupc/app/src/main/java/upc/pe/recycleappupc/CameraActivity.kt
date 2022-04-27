@@ -1,12 +1,17 @@
 package upc.pe.recycleappupc
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Log
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.result.ActivityResultCallback
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -27,6 +32,7 @@ import java.util.logging.SimpleFormatter
 
 class CameraActivity : AppCompatActivity() {
 
+    private val IMAGE_GALLERY_REQUEST_CODE: Int = 2001
     private lateinit var binding: ActivityCameraBinding
     private val REQUEST_CAMERA = 100
     private var imageCapture:ImageCapture? = null
@@ -51,6 +57,16 @@ class CameraActivity : AppCompatActivity() {
 
         binding.btnCamara.setOnClickListener{
             takePhoto()
+        }
+
+    val getImage = registerForActivityResult(
+        ActivityResultContracts.GetContent(),
+        ActivityResultCallback {
+            // binding.dondemostrarlaimg.setImageURI(it)
+        }
+    )
+        binding.btnGallery.setOnClickListener {
+            getImage.launch("image/*")
         }
 
     }

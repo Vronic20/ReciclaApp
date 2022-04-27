@@ -40,9 +40,13 @@
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/navigation_lateral_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/drawable/btn_enable_disable.xml" value="0.1535" />
         <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/drawable/ic_back.xml" value="0.1535" />
-        <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/activity_camera.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/drawable/ic_camera.xml" value="0.1535" />
+        <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/drawable/ic_circle_location.xml" value="0.1535" />
+        <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/activity_camera.xml" value="0.33" />
         <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/fragment_camera.xml" value="0.17028985507246377" />
         <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/fragment_password_recovery_success.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/hilla/AndroidStudioProjects/TDPProject1/recycleappupc/app/src/main/res/layout/fragment_register.xml" value="0.17028985507246377" />
       </map>
     </option>

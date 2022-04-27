@@ -23,6 +23,7 @@
             android:backgroundTint="@android:color/transparent"
             android:src="@drawable/ic_photo"
             app:tint="@color/cardview_dark_background" />
+
     </androidx.camera.view.PreviewView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
