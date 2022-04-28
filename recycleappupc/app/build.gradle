@@ -35,6 +35,9 @@ android {
         enabled = true
     }
     buildToolsVersion '30.0.3'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 apply plugin: 'com.google.gms.google-services'

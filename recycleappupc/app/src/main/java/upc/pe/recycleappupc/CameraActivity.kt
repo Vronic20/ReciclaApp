@@ -19,6 +19,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.findNavController
 import upc.pe.recycleappupc.camera.ConstantsCamera
 import upc.pe.recycleappupc.camera.ConstantsCamera.TAG
 import upc.pe.recycleappupc.databinding.ActivityCameraBinding
@@ -53,6 +54,11 @@ class CameraActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this,
                 ConstantsCamera.REQUIRED_PERMISSION_CAMERA,
                 ConstantsCamera.REQUEST_CAMERA)
+        }
+
+        binding.btnAdvices.setOnClickListener{
+            //it.findNavController().navigate(R.id.advicesFragment2)
+            startActivity(Intent(baseContext, AdviceActivity::class.java))
         }
 
         binding.btnCamara.setOnClickListener{

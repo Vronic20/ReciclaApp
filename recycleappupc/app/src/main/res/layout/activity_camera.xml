@@ -70,7 +70,7 @@
         app:srcCompat="@drawable/button" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnAdvices"
         android:layout_width="80dp"
         android:layout_height="67dp"
         android:layout_marginBottom="20dp"
