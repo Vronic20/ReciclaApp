@@ -4,14 +4,12 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
 import android.util.Log
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -19,16 +17,24 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.navigation.findNavController
+import com.google.gson.Gson
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import upc.pe.recycleappupc.camera.ConstantsCamera
 import upc.pe.recycleappupc.camera.ConstantsCamera.TAG
 import upc.pe.recycleappupc.databinding.ActivityCameraBinding
+import upc.pe.recycleappupc.models.Label
+import upc.pe.recycleappupc.network.ApiRekognition
+import upc.pe.recycleappupc.services.LabelService
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-import java.util.logging.SimpleFormatter
 
 
 class CameraActivity : AppCompatActivity() {
@@ -86,7 +92,7 @@ class CameraActivity : AppCompatActivity() {
             mediaDir else filesDir
     }
 
-    private fun takePhoto() {
+    private fun takePhoto()  {
         val imageCaptured = imageCapture ?: return
         val photoFile = File(
             outputDirectory, SimpleDateFormat(ConstantsCamera
@@ -97,7 +103,9 @@ class CameraActivity : AppCompatActivity() {
         imageCaptured.takePicture(outputOption,ContextCompat.getMainExecutor(this),
         object: ImageCapture.OnImageSavedCallback{
             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
+
                 val savedUri = Uri.fromFile(photoFile)
+                getLabels(photoFile)
                 val message = "Foto Guardada en "
                 Toast.makeText(baseContext,"$message $savedUri", Toast.LENGTH_SHORT).show()
             }
@@ -146,6 +154,32 @@ class CameraActivity : AppCompatActivity() {
 
     private fun allPermissionGranted() = ConstantsCamera.REQUIRED_PERMISSION_CAMERA.all{
         ContextCompat.checkSelfPermission(baseContext,it) == PackageManager.PERMISSION_GRANTED
+    }
+
+    fun toLabelsActivity(text: String) {
+        val intent = Intent(this@CameraActivity, LabelsActivity::class.java)
+        intent.putExtra("labels", text)
+        startActivity(intent)
+    }
+
+    fun getLabels(photoFile: File) {
+
+        val retrofit = ApiRekognition.getInstance()
+        val labelService = retrofit.create(LabelService::class.java)
+        var requestBody = RequestBody.create(MediaType.get("image/jpg"), photoFile)
+        var filePart = MultipartBody.Part.createFormData("file", photoFile.name, requestBody)
+        val myCall: Call<List<Label>> = labelService.detectLabels(filePart)
+        myCall.enqueue(object : Callback<List<Label>> {
+            override fun onFailure(call: Call<List<Label>>, t: Throwable) {
+                Log.e("ERROR", t.message.toString())
+            }
+
+            override fun onResponse(call: Call<List<Label>>, response: Response<List<Label>>) {
+                Log.e("DATA", "RESPONSE")
+                var labels: List<Label> = response.body()!!
+                toLabelsActivity(Gson().toJson(labels));
+            }
+        })
     }
 
     override fun onDestroy() {

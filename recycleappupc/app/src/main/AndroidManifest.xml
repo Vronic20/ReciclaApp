@@ -23,6 +23,9 @@
             android:name=".AdviceActivity"
             android:exported="false" />
         <activity
+            android:name=".LabelsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
