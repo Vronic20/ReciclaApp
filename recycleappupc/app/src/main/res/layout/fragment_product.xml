@@ -40,6 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:id="@+id/txtBienvenida"
             android:layout_width="match_parent"
@@ -47,7 +48,7 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="30dp"
-            android:text="Hola, ¿Que productos te gustaría buscar?"
+            android:text="Hola, ¿Qué productos te gustaría buscar?"
             android:textAlignment="center"
             android:textColor="#0C0C0C"
             android:textSize="40sp" />

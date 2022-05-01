@@ -44,8 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
             android:backgroundTint="@android:color/transparent"
-            android:textColor="@color/black"
-            android:text="Alarmas" />
+            android:text="Alarmas"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnIndicadores"

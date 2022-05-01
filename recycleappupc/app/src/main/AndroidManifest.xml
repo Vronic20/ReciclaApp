@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="upc.pe.recycleappupc">
-    <uses-feature android:name="android.hardware.camera.any"/>
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +17,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycleappupc">
+        <activity
+            android:name=".plastic"
+            android:exported="false" />
+        <activity
+            android:name=".info_plastic"
+            android:exported="false" />
+        <activity
+            android:name=".information_organic"
+            android:exported="false" />
+        <activity
+            android:name=".information_tetrapck"
+            android:exported="false" />
+        <activity
+            android:name=".information_glass"
+            android:exported="false" />
+        <activity
+            android:name=".information_metal"
+            android:exported="false" />
+        <activity
+            android:name=".information_paper"
+            android:exported="false" />
+        <activity
+            android:name=".Information_plastic"
+            android:exported="false" />
         <activity
             android:name=".CameraActivity"
             android:exported="false" />

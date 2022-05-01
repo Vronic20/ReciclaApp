@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfece5"
+    tools:context=".plastic">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="376dp"
+        android:layout_height="89dp"
+        android:text="El plástico en el ambiente se va fragmentando en trocitos cada vez más diminutos que atraen y acumulan sustancias tóxicas. La presencia de toxinas en la vida animal, flora y reservas naturales que acaban siendo consumidas por el ser humano, es más que evidente."
+        android:textAlignment="inherit"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/BtnInicio"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav_menu"
+        tools:layout_editor_absoluteX="-64dp"
+        tools:layout_editor_absoluteY="674dp" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/inf_plastic"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-61dp" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/plant"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/foco"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consejos"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es el impacto ambiental del plástico?"
+        android:textAlignment="inherit"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo puedo reutilizar una botella de plástico?"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué debo hacer para dejar de consumir plástico?"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

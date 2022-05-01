@@ -131,43 +131,12 @@
                     android:textColor="#FFFF"
                     tools:ignore="TextContrastCheck" />
 
-                <TextView
-                    android:id="@+id/txtO"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="O"
-                    android:textSize="18sp" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnGoogle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="50dp"
-                    android:backgroundTint="@android:color/holo_red_dark"
-                    android:text="Google"
-                    tools:ignore="TextContrastCheck" />
-
-                <Button
-                    android:id="@+id/btnFacebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="50dp"
-                    android:backgroundTint="@android:color/holo_blue_dark"
-                    android:text="Facebook"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
+                android:orientation="horizontal"/>
         </LinearLayout>
 
     </ScrollView>
