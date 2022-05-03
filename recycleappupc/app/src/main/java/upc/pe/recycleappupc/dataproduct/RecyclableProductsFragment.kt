@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import upc.pe.recycleappupc.R
+import upc.pe.recycleappupc.R.layout
 import upc.pe.recycleappupc.databinding.FragmentRecyclableProductsBinding
 
 
@@ -29,6 +30,7 @@ class RecyclableProductsFragment : Fragment() {
         binding.imageView.setOnClickListener {
             it.findNavController().navigate(R.id.actionSearchedProduct)
         }
+
     }
 
 }

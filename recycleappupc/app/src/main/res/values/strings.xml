@@ -5,12 +5,12 @@
     <string name="usuario">Usuario</string>
     <string name="contrasena">Contraseña</string>
     <string name="txtreciclaje">Reciclaje App</string>
-    <string name="iniciarsesion">Iniciar Sesion</string>
+    <string name="iniciarsesion">Iniciar sesión</string>
     <string name="txtemail">Email</string>
     <string name="email">name@example.com</string>
-    <string name="lateral_menu">Imagen de Menu Lateral</string>
+    <string name="lateral_menu">Imagen de Menú Lateral</string>
     <string name="puntos_verdes">Puntos Verdes</string>
     <string name="reconocer">Reconocer</string>
-    <string name="estadisticas">Estadisticas</string>
+    <string name="estadisticas">Estadísticas</string>
     <string name="buscar">Buscar</string>
 </resources>

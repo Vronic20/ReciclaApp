@@ -115,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="15dp"
-                    android:text="¿Olvidaste tu Contraseña?"
+                    android:text="¿Olvidaste tu contraseña?"
                     android:textAlignment="textEnd"
                     android:textSize="18sp" />
 
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="O"
+                    android:text="¿No tienes una cuenta?"
                     android:textSize="18sp" />
 
             </LinearLayout>
