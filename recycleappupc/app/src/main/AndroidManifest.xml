@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycleappupc">
         <activity
-            android:name=".plastic"
+            android:name=".PlasticActivity"
             android:exported="false" />
         <activity
             android:name=".info_plastic"
