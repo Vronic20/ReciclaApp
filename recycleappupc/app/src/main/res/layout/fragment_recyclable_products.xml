@@ -10,8 +10,12 @@
 
     <ScrollView
         android:id="@+id/SvRecyclableProducts"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -44,12 +48,11 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
                     android:src="@drawable/ic_launcher_foreground"
-                    android:tooltipText="Plastico"
                     app:srcCompat="@drawable/plastic" />
 
                 <ImageView

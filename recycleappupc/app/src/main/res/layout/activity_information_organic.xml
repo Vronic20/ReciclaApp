@@ -9,42 +9,52 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/home_buttom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/BtnInicio"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
-        app:menu="@menu/bottom_nav_menu"
-        tools:layout_editor_absoluteX="-64dp"
-        tools:layout_editor_absoluteY="674dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/comida"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-5dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/comida" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
         android:backgroundTint="#142715"
         android:text="Encuentra más información aquí!"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintBottom_toTopOf="@+id/home_buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="422dp"
+        android:layout_marginBottom="29dp"
         android:text="Los residuos orgánicos pertenecen al contenedor naranja"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

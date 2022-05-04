@@ -9,42 +9,54 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/home_buttom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
+        android:layout_width="450dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="1dp"
         android:background="@color/BtnInicio"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
-        app:menu="@menu/bottom_nav_menu"
-        tools:layout_editor_absoluteX="-64dp"
-        tools:layout_editor_absoluteY="674dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/vidrio"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vidrio" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
         android:backgroundTint="#142715"
         android:text="Encuentra más información aquí!"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="539dp" />
+        app:layout_constraintBottom_toTopOf="@+id/home_buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
         android:text="Los vidrios pertenecen al contenedor verde"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

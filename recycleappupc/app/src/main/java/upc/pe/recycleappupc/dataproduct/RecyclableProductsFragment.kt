@@ -31,11 +31,22 @@ class RecyclableProductsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.imageView.setOnClickListener {
-            it.findNavController().navigate(R.id.actionSearchedProduct)
+            it.findNavController().navigate(R.id.actionPlastic)
         }
-
         binding.imageView2.setOnClickListener {
-            toPlasticActivity()
+            it.findNavController().navigate(R.id.actionOrganic)
+        }
+        binding.imageView3.setOnClickListener {
+            it.findNavController().navigate(R.id.actionPaper)
+        }
+        binding.imageView4.setOnClickListener {
+            it.findNavController().navigate(R.id.actionMetal)
+        }
+        binding.imageView5.setOnClickListener {
+            it.findNavController().navigate(R.id.actionGlass)
+        }
+        binding.imageView6.setOnClickListener {
+            it.findNavController().navigate(R.id.actionTetrapack)
         }
 
     }

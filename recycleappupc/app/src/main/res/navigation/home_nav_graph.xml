@@ -45,22 +45,62 @@
         android:label="fragment_recyclable_products"
         tools:layout="@layout/fragment_recyclable_products" >
         <action
-            android:id="@+id/actionSearchedProduct"
-            app:destination="@id/searchedProductFragment" />
+            android:id="@+id/actionPlastic"
+            app:destination="@id/information_plastic" />
+        <action
+            android:id="@+id/actionOrganic"
+            app:destination="@id/information_organic" />
+        <action
+            android:id="@+id/actionPaper"
+            app:destination="@id/information_paper" />
+        <action
+            android:id="@+id/actionMetal"
+            app:destination="@id/information_metal" />
+        <action
+            android:id="@+id/actionGlass"
+            app:destination="@id/information_glass" />
+        <action
+            android:id="@+id/actionTetrapack"
+            app:destination="@id/information_tetrapck" />
     </fragment>
     <fragment
         android:id="@+id/collectionPointsFragment2"
         android:name="upc.pe.recycleappupc.dataproduct.CollectionPointsFragment"
         android:label="fragment_collection_points"
         tools:layout="@layout/fragment_collection_points" />
-    <fragment
-        android:id="@+id/searchedProductFragment"
-        android:name="upc.pe.recycleappupc.dataproduct.SearchedProductFragment"
-        android:label="fragment_searched_product"
-        tools:layout="@layout/fragment_searched_product" />
     <activity
         android:id="@+id/cameraActivity"
         android:name="upc.pe.recycleappupc.CameraActivity"
         android:label="activity_camera"
         tools:layout="@layout/activity_camera" />
+    <activity
+        android:id="@+id/information_plastic"
+        android:name="upc.pe.recycleappupc.Information_plastic"
+        android:label="activity_information_plastic"
+        tools:layout="@layout/activity_information_plastic" />
+    <activity
+        android:id="@+id/information_organic"
+        android:name="upc.pe.recycleappupc.information_organic"
+        android:label="activity_information_organic"
+        tools:layout="@layout/activity_information_organic" />
+    <activity
+        android:id="@+id/information_paper"
+        android:name="upc.pe.recycleappupc.information_paper"
+        android:label="activity_information_paper"
+        tools:layout="@layout/activity_information_paper" />
+    <activity
+        android:id="@+id/information_metal"
+        android:name="upc.pe.recycleappupc.information_metal"
+        android:label="activity_information_metal"
+        tools:layout="@layout/activity_information_metal" />
+    <activity
+        android:id="@+id/information_glass"
+        android:name="upc.pe.recycleappupc.information_glass"
+        android:label="activity_information_glass"
+        tools:layout="@layout/activity_information_glass" />
+    <activity
+        android:id="@+id/information_tetrapck"
+        android:name="upc.pe.recycleappupc.information_tetrapck"
+        android:label="activity_information_tetrapck"
+        tools:layout="@layout/activity_information_tetrapck" />
 </navigation>

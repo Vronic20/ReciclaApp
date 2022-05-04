@@ -38,6 +38,13 @@
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/lateral_nav_menu.xml" value="0.16510416666666666" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/navigation_bottom_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/navigation_lateral_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_glass.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_metal.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_organic.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_paper.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_plastic.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_tetrapck.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_recyclable_products.xml" value="0.22" />
         <entry key="..\:/Universidad/TDP/RECICLAJE APP/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_advices.xml" value="0.5" />
         <entry key="..\:/Universidad/TDP/RECICLAJE APP/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_camera.xml" value="0.36666666666666664" />
         <entry key="..\:/Universidad/TDP/RECICLAJE APP/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
