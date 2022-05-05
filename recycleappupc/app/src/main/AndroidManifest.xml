@@ -30,13 +30,13 @@
             android:name=".information_tetrapck"
             android:exported="false" />
         <activity
-            android:name=".information_glass"
+            android:name=".Information_glass"
             android:exported="false" />
         <activity
             android:name=".information_metal"
             android:exported="false" />
         <activity
-            android:name=".information_paper"
+            android:name=".Information_paper"
             android:exported="false" />
         <activity
             android:name=".Information_plastic"

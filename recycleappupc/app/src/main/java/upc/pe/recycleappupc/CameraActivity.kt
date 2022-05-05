@@ -156,10 +156,25 @@ class CameraActivity : AppCompatActivity() {
         ContextCompat.checkSelfPermission(baseContext,it) == PackageManager.PERMISSION_GRANTED
     }
 
-    fun toLabelsActivity(text: String) {
-        val intent = Intent(this@CameraActivity, LabelsActivity::class.java)
-        intent.putExtra("labels", text)
-        startActivity(intent)
+    fun toActivity(labels: List<Label>) {
+        var keysLabels = labels.map({ e -> e.name})
+
+        var intent = Intent(this@CameraActivity, LabelsActivity::class.java)
+        if (keysLabels.contains("Bottle") || keysLabels.contains("Bottle")) {
+            intent = Intent(this@CameraActivity, Information_plastic::class.java)
+            startActivity(intent)
+        } else if (keysLabels.contains("Glass") || keysLabels.contains("Wine") || keysLabels.contains("Beverage")) {
+            intent = Intent(this@CameraActivity, Information_glass::class.java)
+            startActivity(intent)
+        } else if (keysLabels.contains("Wood") || keysLabels.contains("Paper")) {
+            intent = Intent(this@CameraActivity, Information_paper::class.java)
+            startActivity(intent)
+        } else {
+            intent.putExtra("labels", Gson().toJson(labels))
+            startActivity(intent)
+        }
+
+
     }
 
     fun getLabels(photoFile: File) {
@@ -177,7 +192,7 @@ class CameraActivity : AppCompatActivity() {
             override fun onResponse(call: Call<List<Label>>, response: Response<List<Label>>) {
                 Log.e("DATA", "RESPONSE")
                 var labels: List<Label> = response.body()!!
-                toLabelsActivity(Gson().toJson(labels));
+                toActivity(labels);
             }
         })
     }

@@ -85,7 +85,7 @@
         tools:layout="@layout/activity_information_organic" />
     <activity
         android:id="@+id/information_paper"
-        android:name="upc.pe.recycleappupc.information_paper"
+        android:name="upc.pe.recycleappupc.Information_paper"
         android:label="activity_information_paper"
         tools:layout="@layout/activity_information_paper" />
     <activity
@@ -95,7 +95,7 @@
         tools:layout="@layout/activity_information_metal" />
     <activity
         android:id="@+id/information_glass"
-        android:name="upc.pe.recycleappupc.information_glass"
+        android:name="upc.pe.recycleappupc.Information_glass"
         android:label="activity_information_glass"
         tools:layout="@layout/activity_information_glass" />
     <activity

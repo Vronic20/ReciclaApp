@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dfece5"
-    tools:context=".information_glass">
+    tools:context=".Information_glass">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/home_buttom_navigation"
