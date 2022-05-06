@@ -52,8 +52,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:srcCompat="@drawable/plastic" />
+                    android:src="@drawable/plastic" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -62,8 +61,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:srcCompat="@drawable/comida" />
+                    android:src="@drawable/comida"/>
             </LinearLayout>
 
             <LinearLayout
@@ -80,8 +78,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:srcCompat="@drawable/papel" />
+                    android:src="@drawable/papel"/>
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -90,8 +87,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:srcCompat="@drawable/metales" />
+                    android:src="@drawable/metales"/>
             </LinearLayout>
 
             <LinearLayout
@@ -108,8 +104,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:srcCompat="@drawable/vidrio" />
+                    android:src="@drawable/vidrio"/>
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -118,8 +113,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:srcCompat="@drawable/tetrapack" />
+                    android:src="@drawable/tetrapack"/>
             </LinearLayout>
 
 

@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycleappupc">
         <activity
+            android:name=".collector_points"
+            android:exported="false" />
+        <activity
             android:name=".PlasticActivity"
             android:exported="false" />
         <activity

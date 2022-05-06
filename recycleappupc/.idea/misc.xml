@@ -38,13 +38,26 @@
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/lateral_nav_menu.xml" value="0.16510416666666666" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/navigation_bottom_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Proyectos/ProyectoTDP/TDP1/recycleappupc/app/src/main/res/menu/navigation_lateral_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1945" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_collector_points.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
         <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_glass.xml" value="0.20416666666666666" />
         <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_metal.xml" value="0.20416666666666666" />
         <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_organic.xml" value="0.20416666666666666" />
         <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_paper.xml" value="0.20416666666666666" />
         <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_plastic.xml" value="0.20416666666666666" />
         <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_information_tetrapck.xml" value="0.20416666666666666" />
-        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_recyclable_products.xml" value="0.22" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_password_recovery.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_password_recovery_success.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_product.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_profile.xml" value="0.15534420289855072" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_recyclable_products.xml" value="0.18" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_registersuccess.xml" value="0.10778985507246377" />
+        <entry key="..\:/ReciclaApp/recycleappupc/app/src/main/res/layout/fragment_searched_product.xml" value="0.12047101449275362" />
         <entry key="..\:/Universidad/TDP/RECICLAJE APP/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_advices.xml" value="0.5" />
         <entry key="..\:/Universidad/TDP/RECICLAJE APP/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_camera.xml" value="0.36666666666666664" />
         <entry key="..\:/Universidad/TDP/RECICLAJE APP/ReciclaApp/recycleappupc/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />

@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="usuario">Usuario</string>
     <string name="contrasena">Contraseña</string>
-    <string name="txtreciclaje">Reciclaje App</string>
+    <string name="txtreciclaje">Recycle App</string>
     <string name="iniciarsesion">Iniciar sesión</string>
     <string name="txtemail">Email</string>
     <string name="email">name@example.com</string>
@@ -13,4 +13,5 @@
     <string name="reconocer">Reconocer</string>
     <string name="estadisticas">Estadísticas</string>
     <string name="buscar">Buscar</string>
+    <string name="plastico">Los plásticos pertenecen al contenedor amarillo</string>
 </resources>

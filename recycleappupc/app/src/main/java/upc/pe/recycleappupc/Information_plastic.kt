@@ -10,7 +10,7 @@ class Information_plastic : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_information_plastic)
 
-        var btnInfo = this.findViewById<Button>(R.id.btnInfo)
+        var btnInfo = this.findViewById<Button>(R.id.button4)
 
         btnInfo.setOnClickListener{
             val intent = Intent(this@Information_plastic, PlasticActivity::class.java)
