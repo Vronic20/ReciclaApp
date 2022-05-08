@@ -18,6 +18,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycleappupc">
         <activity
+            android:name=".faucett"
+            android:exported="false" />
+        <activity
+            android:name=".plaza_benavides"
+            android:exported="false" />
+        <activity
+            android:name=".plaza_ventanilla"
+            android:exported="false" />
+        <activity
+            android:name=".plaza_colonial"
+            android:exported="false" />
+        <activity
+            android:name=".puntos_verdes"
+            android:exported="false" />
+        <activity
             android:name=".collector_points"
             android:exported="false" />
         <activity

@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/imageView14"
                     android:layout_width="268dp"
                     android:layout_height="180dp"
                     android:src="@drawable/logo" />

@@ -36,7 +36,7 @@ class RecyclableProductsFragment : Fragment() {
         binding.imageView2.setOnClickListener {
             it.findNavController().navigate(R.id.actionOrganic)
         }
-        binding.imageView3.setOnClickListener {
+        binding.imageView14.setOnClickListener {
             it.findNavController().navigate(R.id.actionPaper)
         }
         binding.imageView4.setOnClickListener {

@@ -14,4 +14,9 @@
     <string name="estadisticas">Estadísticas</string>
     <string name="buscar">Buscar</string>
     <string name="plastico">Los plásticos pertenecen al contenedor amarillo</string>
+    <string name="glass">Los vidrios pertenecen al contenedor verde</string>
+    <string name="metal">Los metales pertenecen al  contenedor amarillo</string>
+    <string name="organic">Los residuos orgánicos pertenecen al contenedor naranja</string>
+    <string name="paper">El papel y cartón pertenecen al  contenedor azul</string>
+    <string name="tetrapack">El papel y cartón pertenecen al  contenedor azul</string>
 </resources>
