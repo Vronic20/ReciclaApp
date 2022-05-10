@@ -36,7 +36,6 @@ class ProductFragment : Fragment() {
              it.findNavController().navigate(R.id.actionProfile)
          }
 
-
         binding.editBuscar.setOnClickListener{
             it.findNavController().navigate(R.id.actionRecyclableProd)
         }
