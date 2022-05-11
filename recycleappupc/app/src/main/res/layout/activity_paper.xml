@@ -79,13 +79,13 @@
                     android:text="  La producción de papel es una de las actividades industriales con mayor impacto negativo para el medio ambiente. Su proceso de fabricación, distribución y consumo implica la sobreexplotación de recursos naturales que son nocivos para la naturaleza."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="184dp"
+                android:layout_height="195dp"
                 android:background="#E7F6EE"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"

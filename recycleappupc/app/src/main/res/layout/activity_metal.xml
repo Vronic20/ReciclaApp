@@ -79,7 +79,7 @@
                     android:text="  Los metales están presentes en nuestra vida diaria. El hierro, el acero, aluminio, cobre, bronce, latón y plomo son metales reciclables que pueden reutilizarse un número ilimitado de veces sin perder sus propiedades. En el hogar se ocupan en infinidad de utensilios de nuestra cocina. También están en nuestros muebles y como componentes de nuestros celulares, ordenadores y tablets."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

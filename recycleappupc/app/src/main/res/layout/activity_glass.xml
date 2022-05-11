@@ -80,7 +80,7 @@
                     android:text="  El vidrio es un material que independientemente de la cantidad de veces que se recicle, mantiene el 100% de las propiedades iniciales. La cadena de reciclaje de este material conforma lo que podría denominarse como ‘un círculo perfecto’, siendo todo un ejemplo de economía circular y sostenibilidad."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

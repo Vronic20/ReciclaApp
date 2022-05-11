@@ -79,7 +79,7 @@
                     android:text=" Los residuos orgánicos son todos los desechos o residuos que alguna vez estuvieron vivos o fueron parte de un ser vivo susceptible a degradarse biológicamente."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

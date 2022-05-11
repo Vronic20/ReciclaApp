@@ -79,7 +79,7 @@
                     android:text="  En promedio, más del 70 % del material para envasado se produce a partir de fibras de papel largas y fuertes que se pueden reciclar varias veces. La capa delgada de polímeros (o plásticos) de nuestros envases para bebidas se puede mezclar con otros polímeros y convertir en productos nuevos, tales como tejas, cajones, cajas de cartón y más.."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

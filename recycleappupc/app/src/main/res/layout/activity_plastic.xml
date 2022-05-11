@@ -80,7 +80,7 @@
                     android:text="  El plástico en el ambiente se va fragmentando en trocitos cada vez más diminutos que atraen y acumulan sustancias tóxicas. La presencia de toxinas en la vida animal, flora y reservas naturales que acaban siendo consumidas por el ser humano, es más que evidente."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
