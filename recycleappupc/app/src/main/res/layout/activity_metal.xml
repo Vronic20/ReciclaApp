@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dfece5"
-    tools:context=".PlasticActivity">
-
+    tools:context=".metal">
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -33,7 +32,7 @@
                     android:id="@+id/imageView14"
                     android:layout_width="450dp"
                     android:layout_height="237dp"
-                    android:src="@drawable/inf_plastic" />
+                    android:src="@drawable/metal" />
 
             </LinearLayout>
 
@@ -74,10 +73,10 @@
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="155dp"
                     android:layout_marginTop="30dp"
                     android:gravity="left"
-                    android:text="  El plástico en el ambiente se va fragmentando en trocitos cada vez más diminutos que atraen y acumulan sustancias tóxicas. La presencia de toxinas en la vida animal, flora y reservas naturales que acaban siendo consumidas por el ser humano, es más que evidente."
+                    android:text="  Los metales están presentes en nuestra vida diaria. El hierro, el acero, aluminio, cobre, bronce, latón y plomo son metales reciclables que pueden reutilizarse un número ilimitado de veces sin perder sus propiedades. En el hogar se ocupan en infinidad de utensilios de nuestra cocina. También están en nuestros muebles y como componentes de nuestros celulares, ordenadores y tablets."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
                     android:textSize="16sp" />
@@ -124,7 +123,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:text="  ¿Cuál es el impacto ambiental del plástico?"
+                    android:text="  ¿Por qué reciclamos los metales?"
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B" />
 
@@ -133,7 +132,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="  ¿Cómo puedo reutilizar una botella de plástico?"
+                    android:text="  ¿Cuáles son los metales que se pueden reciclar?"
                     android:textColor="#1C1B1B" />
 
                 <TextView
@@ -141,7 +140,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="  ¿Qué debo hacer para dejar de consumir plástico?"
+                    android:text="  ¿Qué metales no se pueden reciclar?"
                     android:textColor="#1C1B1B" />
             </LinearLayout>
 
@@ -162,7 +161,7 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"/>
                 <ImageView
-                    android:id="@+id/btnShare"
+                    android:id="@+id/btnShare2"
                     android:layout_width="48dp"
                     android:layout_height="36dp"
                     android:gravity="left"

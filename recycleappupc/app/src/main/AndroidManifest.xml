@@ -18,6 +18,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycleappupc">
         <activity
+            android:name=".organic"
+            android:exported="false" />
+        <activity
+            android:name=".paper"
+            android:exported="false" />
+        <activity
+            android:name=".tetrapack"
+            android:exported="false" />
+        <activity
+            android:name=".metal"
+            android:exported="false" />
+        <activity
+            android:name=".glass"
+            android:exported="false" />
+        <activity
             android:name=".repeat"
             android:exported="false" />
         <activity
