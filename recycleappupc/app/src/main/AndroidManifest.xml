@@ -55,13 +55,7 @@
             android:name=".puntos_verdes"
             android:exported="false" />
         <activity
-            android:name=".collector_points"
-            android:exported="false" />
-        <activity
             android:name=".PlasticActivity"
-            android:exported="false" />
-        <activity
-            android:name=".info_plastic"
             android:exported="false" />
         <activity
             android:name=".information_organic"
