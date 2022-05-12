@@ -22,6 +22,21 @@
             android:name=".EstadisticasActivity"
             android:exported="false" />
         <activity
+            android:name=".organic"
+            android:exported="false" />
+        <activity
+            android:name=".paper"
+            android:exported="false" />
+        <activity
+            android:name=".tetrapack"
+            android:exported="false" />
+        <activity
+            android:name=".metal"
+            android:exported="false" />
+        <activity
+            android:name=".glass"
+            android:exported="false" />
+        <activity
             android:name=".repeat"
             android:exported="false" />
         <activity
@@ -40,7 +55,13 @@
             android:name=".puntos_verdes"
             android:exported="false" />
         <activity
+            android:name=".collector_points"
+            android:exported="false" />
+        <activity
             android:name=".PlasticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".info_plastic"
             android:exported="false" />
         <activity
             android:name=".information_organic"
