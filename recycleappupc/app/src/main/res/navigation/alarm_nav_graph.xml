@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarm_nav_graph"
+    app:startDestination="@id/alarmFragment2">
+    <fragment
+        android:id="@+id/alarmFragment2"
+        android:name="upc.pe.recycleappupc.alarm.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" >
+        <action
+            android:id="@+id/actionTimePicker"
+            app:destination="@id/timePickerFragment" />
+        <action
+            android:id="@+id/actionProfileA"
+            app:destination="@id/ProfileActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/timePickerFragment"
+        android:name="upc.pe.recycleappupc.alarm.TimePickerFragment"
+        android:label="fragment_time_picker"
+        tools:layout="@layout/fragment_time_picker" >
+        <action
+            android:id="@+id/actionPicktoAlarm"
+            app:destination="@id/alarmFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/ProfileActivity"
+        android:name="upc.pe.recycleappupc.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+</navigation>

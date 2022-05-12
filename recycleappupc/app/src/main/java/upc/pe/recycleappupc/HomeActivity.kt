@@ -48,6 +48,7 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.ItemStatistics -> {
+                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
                     Toast.makeText(this,"Funciona Estadisticas",Toast.LENGTH_SHORT).show()
                     true
                 }

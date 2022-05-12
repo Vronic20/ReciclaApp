@@ -71,12 +71,15 @@ class CameraActivity : AppCompatActivity() {
             takePhoto()
         }
 
-    val getImage = registerForActivityResult(
-        ActivityResultContracts.GetContent(),
-        ActivityResultCallback {
-            // binding.dondemostrarlaimg.setImageURI(it)
-        }
-    )
+        val getImage = registerForActivityResult(
+            ActivityResultContracts.GetContent(),
+            ActivityResultCallback {
+                val galleryfile = File(it.getPath())
+                getLabels(galleryfile)
+                val message = "Foto Obtenida de "
+                Toast.makeText(baseContext,"$message $it", Toast.LENGTH_SHORT).show()
+            }
+        )
         binding.btnGallery.setOnClickListener {
             getImage.launch("image/*")
         }
@@ -101,20 +104,20 @@ class CameraActivity : AppCompatActivity() {
         val outputOption = ImageCapture.OutputFileOptions.Builder(photoFile).build()
 
         imageCaptured.takePicture(outputOption,ContextCompat.getMainExecutor(this),
-        object: ImageCapture.OnImageSavedCallback{
-            override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
+            object: ImageCapture.OnImageSavedCallback{
+                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
 
-                val savedUri = Uri.fromFile(photoFile)
-                getLabels(photoFile)
-                val message = "Foto Guardada en "
-                Toast.makeText(baseContext,"$message $savedUri", Toast.LENGTH_SHORT).show()
-            }
+                    val savedUri = Uri.fromFile(photoFile)
+                    getLabels(photoFile)
+                    val message = "Foto Guardada en "
+                    Toast.makeText(baseContext,"$message $savedUri", Toast.LENGTH_SHORT).show()
+                }
 
-            override fun onError(exception: ImageCaptureException) {
-                Log.e(TAG,"Error: ${exception.message}",exception)
-            }
+                override fun onError(exception: ImageCaptureException) {
+                    Log.e(TAG,"Error: ${exception.message}",exception)
+                }
 
-        })
+            })
     }
 
     override fun onRequestPermissionsResult(

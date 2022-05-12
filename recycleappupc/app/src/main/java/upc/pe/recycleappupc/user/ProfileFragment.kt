@@ -1,5 +1,6 @@
 package upc.pe.recycleappupc.user
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import upc.pe.recycleappupc.EstadisticasActivity
 import upc.pe.recycleappupc.R
 import upc.pe.recycleappupc.databinding.FragmentProfileBinding
 
@@ -36,6 +38,10 @@ class ProfileFragment : Fragment() {
             auth.signOut()
             it.findNavController().navigate(R.id.actionLogin)
             Toast.makeText(context,"Sesión Cerrada",Toast.LENGTH_LONG).show()
+        }
+        binding.btnAlarma.setOnClickListener{
+
+            it.findNavController().navigate(R.id.actionAlarm)
         }
     }
 

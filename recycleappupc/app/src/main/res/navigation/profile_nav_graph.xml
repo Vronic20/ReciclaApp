@@ -17,10 +17,18 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionAlarm"
+            app:destination="@id/alarm" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="upc.pe.recycleappupc.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/alarm"
+        android:name="upc.pe.recycleappupc.Alarm"
+        android:label="activity_alarm"
+        tools:layout="@layout/activity_alarm" />
 </navigation>
