@@ -1,6 +1,7 @@
 package upc.pe.recycleappupc.dataproduct
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,7 +12,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
-import upc.pe.recycleappupc.R
+import upc.pe.recycleappupc.*
 import upc.pe.recycleappupc.databinding.FragmentProductBinding
 
 
@@ -37,7 +38,22 @@ class ProductFragment : Fragment() {
          }
 
         binding.editBuscar.setOnClickListener{
-            it.findNavController().navigate(R.id.actionRecyclableProd)
+            var text = binding.editBuscar.text.toString().toLowerCase();
+            if (listOf("papel","carton").contains(text)) {
+                startActivity(Intent(view.context, Information_paper::class.java))
+            } else if (text == "comida") {
+                startActivity(Intent(view.context, Information_organic::class.java))
+            } else if (text == "vidrio") {
+                startActivity(Intent(view.context, Information_glass::class.java))
+            } else if (listOf("plastico","botella").contains(text)) {
+                startActivity(Intent(view.context, Information_plastic::class.java))
+            } else if (text == "tetrapack") {
+                startActivity(Intent(view.context, Information_tetrapck::class.java))
+            } else if (text == "metal") {
+                startActivity(Intent(view.context, Information_metal::class.java))
+            } else {
+                it.findNavController().navigate(R.id.actionRecyclableProd)
+            }
         }
 
         binding.btnEscanear.setOnClickListener {

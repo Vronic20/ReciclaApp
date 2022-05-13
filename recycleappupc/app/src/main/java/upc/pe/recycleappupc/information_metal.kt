@@ -7,14 +7,14 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class information_metal : AppCompatActivity() {
+class Information_metal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_information_metal)
         var btnInfo = this.findViewById<Button>(R.id.button3)
 
         btnInfo.setOnClickListener{
-            val intent = Intent(this@information_metal, metal::class.java)
+            val intent = Intent(this@Information_metal, metal::class.java)
             startActivity(intent)
         }
         val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)

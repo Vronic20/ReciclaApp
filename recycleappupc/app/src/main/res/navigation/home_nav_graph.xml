@@ -80,7 +80,7 @@
         tools:layout="@layout/activity_information_plastic" />
     <activity
         android:id="@+id/information_organic"
-        android:name="upc.pe.recycleappupc.information_organic"
+        android:name="upc.pe.recycleappupc.Information_organic"
         android:label="activity_information_organic"
         tools:layout="@layout/activity_information_organic" />
     <activity
@@ -90,7 +90,7 @@
         tools:layout="@layout/activity_information_paper" />
     <activity
         android:id="@+id/information_metal"
-        android:name="upc.pe.recycleappupc.information_metal"
+        android:name="upc.pe.recycleappupc.Information_metal"
         android:label="activity_information_metal"
         tools:layout="@layout/activity_information_metal" />
     <activity
@@ -100,7 +100,7 @@
         tools:layout="@layout/activity_information_glass" />
     <activity
         android:id="@+id/information_tetrapck"
-        android:name="upc.pe.recycleappupc.information_tetrapck"
+        android:name="upc.pe.recycleappupc.Information_tetrapck"
         android:label="activity_information_tetrapck"
         tools:layout="@layout/activity_information_tetrapck" />
 </navigation>

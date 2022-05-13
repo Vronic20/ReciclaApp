@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dfece5"
-    tools:context=".repeat">
+    tools:context=".ActivityRepeat">
 
     <ScrollView
         android:id="@+id/SvRecyclableProducts"

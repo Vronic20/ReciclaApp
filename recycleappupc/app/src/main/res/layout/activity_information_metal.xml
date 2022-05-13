@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dfece5"
-    tools:context=".information_metal">
+    tools:context=".Information_metal">
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/home_buttom_navigation"
         android:layout_width="match_parent"
