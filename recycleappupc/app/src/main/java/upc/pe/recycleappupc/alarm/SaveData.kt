@@ -43,7 +43,7 @@ class SaveData{
 
         var intent = Intent(context,BroadcastReceiver::class.java)
         intent.putExtra("message", "¡El camion de basura está en su destino!")
-        intent.action = "com.tester.recycleappupc"
+        intent.action = "com.tester.alarmmanager"
         val pi = PendingIntent.getBroadcast(context,0,intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
         am.setRepeating(AlarmManager.RTC_WAKEUP, calender.timeInMillis, AlarmManager.INTERVAL_DAY, pi)
