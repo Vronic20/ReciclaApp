@@ -74,7 +74,7 @@ class CameraActivity : AppCompatActivity() {
         val getImage = registerForActivityResult(
             ActivityResultContracts.GetContent(),
             ActivityResultCallback {
-                val galleryfile = File(it.getPath())
+                val galleryfile = File(it.path)
                 getLabels(galleryfile)
                 val message = "Foto Obtenida de "
                 Toast.makeText(baseContext,"$message $it", Toast.LENGTH_SHORT).show()
@@ -162,21 +162,19 @@ class CameraActivity : AppCompatActivity() {
     fun toActivity(labels: List<Label>) {
         var keysLabels = labels.map({ e -> e.name})
 
-        var intent = Intent(this@CameraActivity, LabelsActivity::class.java)
-        if (keysLabels.contains("Bottle") || keysLabels.contains("Bottle")) {
+        var intent = Intent(this@CameraActivity, ActivityRepeat::class.java)
+        if (keysLabels.contains("Bottle") || keysLabels.contains("Plastic")) {
             intent = Intent(this@CameraActivity, Information_plastic::class.java)
-            startActivity(intent)
         } else if (keysLabels.contains("Glass") || keysLabels.contains("Wine") || keysLabels.contains("Beverage")) {
             intent = Intent(this@CameraActivity, Information_glass::class.java)
-            startActivity(intent)
         } else if (keysLabels.contains("Wood") || keysLabels.contains("Paper")) {
             intent = Intent(this@CameraActivity, Information_paper::class.java)
-            startActivity(intent)
+        } else if (keysLabels.contains("food") || keysLabels.contains("dish") || keysLabels.contains("meal")) {
+            intent = Intent(this@CameraActivity, Information_organic::class.java)
         } else {
-            intent.putExtra("labels", Gson().toJson(labels))
-            startActivity(intent)
+            // TODO
         }
-
+        startActivity(intent)
 
     }
 

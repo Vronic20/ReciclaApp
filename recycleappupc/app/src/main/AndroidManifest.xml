@@ -37,7 +37,7 @@
             android:name=".glass"
             android:exported="false" />
         <activity
-            android:name=".repeat"
+            android:name=".ActivityRepeat"
             android:exported="false" />
         <activity
             android:name=".faucett"
@@ -58,16 +58,16 @@
             android:name=".PlasticActivity"
             android:exported="false" />
         <activity
-            android:name=".information_organic"
+            android:name=".Information_organic"
             android:exported="false" />
         <activity
-            android:name=".information_tetrapck"
+            android:name=".Information_tetrapck"
             android:exported="false" />
         <activity
             android:name=".Information_glass"
             android:exported="false" />
         <activity
-            android:name=".information_metal"
+            android:name=".Information_metal"
             android:exported="false" />
         <activity
             android:name=".Information_paper"

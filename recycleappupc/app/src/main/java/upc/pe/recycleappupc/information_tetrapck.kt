@@ -7,14 +7,14 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class information_tetrapck : AppCompatActivity() {
+class Information_tetrapck : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_information_tetrapck)
         var btnInfo = this.findViewById<Button>(R.id.button5)
 
         btnInfo.setOnClickListener{
-            val intent = Intent(this@information_tetrapck, tetrapack::class.java)
+            val intent = Intent(this@Information_tetrapck, tetrapack::class.java)
             startActivity(intent)
         }
         val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
