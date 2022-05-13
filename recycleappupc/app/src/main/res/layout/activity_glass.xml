@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="#dfece5"
     tools:context=".glass">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/BtnInicio"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <ScrollView
         android:layout_width="0dp"
@@ -25,7 +38,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="213dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -40,7 +53,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:background="#E7F6EE"
                 android:gravity="left"
                 android:orientation="vertical">
@@ -74,8 +87,8 @@
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="left"
                     android:text="  El vidrio es un material que independientemente de la cantidad de veces que se recicle, mantiene el 100% de las propiedades iniciales. La cadena de reciclaje de este material conforma lo que podría denominarse como ‘un círculo perfecto’, siendo todo un ejemplo de economía circular y sostenibilidad."
                     android:textAlignment="inherit"
@@ -86,7 +99,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="184dp"
+                android:layout_height="wrap_content"
                 android:background="#E7F6EE"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -123,8 +136,8 @@
                     android:id="@+id/textView17"
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:text="  ¿Cuál es el impacto ambiental del vidrio?"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es el impacto ambiental del vidrio?"
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B" />
 
@@ -133,7 +146,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="  ¿Cómo reciclar vidrio en casa?"
+                    android:text="¿Cómo reciclar vidrio en casa?"
                     android:textColor="#1C1B1B" />
 
                 <TextView
@@ -141,7 +154,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="  Ideas para reciclar botellas de vidrio"
+                    android:text="Ideas para reciclar botellas de vidrio"
                     android:textColor="#1C1B1B" />
             </LinearLayout>
 

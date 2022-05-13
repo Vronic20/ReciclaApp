@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="#dfece5"
     tools:context=".organic">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/BtnInicio"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -24,7 +37,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="213dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -39,7 +52,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:background="#E7F6EE"
                 android:gravity="left"
                 android:orientation="vertical">
@@ -47,7 +60,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="left"
                     android:orientation="horizontal">
 
@@ -73,10 +86,10 @@
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
                     android:gravity="left"
-                    android:text=" Los residuos orgánicos son todos los desechos o residuos que alguna vez estuvieron vivos o fueron parte de un ser vivo susceptible a degradarse biológicamente."
+                    android:text="Los residuos orgánicos son todos los desechos o residuos que alguna vez estuvieron vivos o fueron parte de un ser vivo susceptible a degradarse biológicamente."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
                     android:textSize="14sp" />
@@ -85,7 +98,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="match_parent"
                 android:background="#E7F6EE"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -122,8 +135,8 @@
                     android:id="@+id/textView17"
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:text="  ¿Cuál es el impacto ambiental de los residuos orgánicos?"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es el impacto ambiental de los residuos orgánicos?"
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B" />
 
@@ -132,7 +145,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="  ¿Cómo puedo reciclar los residuos orgánicos?"
+                    android:text="¿Cómo puedo reciclar los residuos orgánicos?"
                     android:textColor="#1C1B1B" />
 
             </LinearLayout>

@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="#dfece5"
     tools:context=".tetrapack">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/BtnInicio"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -39,7 +52,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:background="#E7F6EE"
                 android:gravity="left"
                 android:orientation="vertical">
@@ -73,10 +86,10 @@
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="left"
-                    android:text="  En promedio, más del 70 % del material para envasado se produce a partir de fibras de papel largas y fuertes que se pueden reciclar varias veces. La capa delgada de polímeros (o plásticos) de nuestros envases para bebidas se puede mezclar con otros polímeros y convertir en productos nuevos, tales como tejas, cajones, cajas de cartón y más.."
+                    android:text="En promedio, más del 70 % del material para envasado se produce a partir de fibras de papel largas y fuertes que se pueden reciclar varias veces. La capa delgada de polímeros (o plásticos) de nuestros envases para bebidas se puede mezclar con otros polímeros y convertir en productos nuevos, tales como tejas, cajones, cajas de cartón y más.."
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B"
                     android:textSize="14sp" />
@@ -85,7 +98,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="wrap_content"
                 android:background="#E7F6EE"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -122,8 +135,8 @@
                     android:id="@+id/textView17"
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:text="  ¿Cuál es el impacto ambiental del tetrapack?"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es el impacto ambiental del tetrapack?"
                     android:textAlignment="inherit"
                     android:textColor="#1C1B1B" />
 
@@ -132,7 +145,7 @@
                     android:layout_width="392dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="  ¿Cómo puedo reutilizar el tetrapack?"
+                    android:text="¿Cómo puedo reutilizar el tetrapack?"
                     android:textColor="#1C1B1B" />
 
             </LinearLayout>

@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.Toast
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PlasticActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,24 @@ class PlasticActivity : AppCompatActivity() {
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody)
 
             startActivity(shareIntent)
+        }
+        val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
+        homeBottomNav.setOnItemSelectedListener {
+            when(it.itemId) {
+                R.id.ItemReconocer -> {
+                    startActivity(Intent(baseContext,CameraActivity::class.java))
+                    true
+                }
+                R.id.ItemGreenPoints -> {
+                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.ItemStatistics -> {
+                    Toast.makeText(this,"Funciona Estadisticas", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> {false}
+            }
         }
     }
 }
