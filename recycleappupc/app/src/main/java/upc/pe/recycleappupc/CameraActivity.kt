@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
@@ -17,6 +18,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.net.toFile
 import com.google.gson.Gson
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -31,6 +33,8 @@ import upc.pe.recycleappupc.models.Label
 import upc.pe.recycleappupc.network.ApiRekognition
 import upc.pe.recycleappupc.services.LabelService
 import java.io.File
+import java.io.FileOutputStream
+import java.net.URI
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
@@ -74,8 +78,8 @@ class CameraActivity : AppCompatActivity() {
         val getImage = registerForActivityResult(
             ActivityResultContracts.GetContent(),
             ActivityResultCallback {
-                val galleryfile = File(it.path)
-                getLabels(galleryfile)
+                val photo = uriToFile(it,"nombreTemporal");
+                getLabels(photo!!)
                 val message = "Foto Obtenida de "
                 Toast.makeText(baseContext,"$message $it", Toast.LENGTH_SHORT).show()
             }
@@ -84,6 +88,22 @@ class CameraActivity : AppCompatActivity() {
             getImage.launch("image/*")
         }
 
+    }
+
+    private fun uriToFile(uri: Uri, fileName: String): File? {
+        this.contentResolver.openInputStream(uri)?.let {
+                inputStream ->
+            // Create File
+            val storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+            val tempFile = File.createTempFile(fileName, ".jpg", storageDir)
+            // Other
+            val outputStream = FileOutputStream(tempFile)
+            inputStream.copyTo(outputStream)
+            inputStream.close()
+            outputStream.close()
+            return tempFile
+        }
+        return null
     }
 
     private fun getOutputDirectory(): File {
