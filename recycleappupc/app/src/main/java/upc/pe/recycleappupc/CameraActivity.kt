@@ -19,6 +19,9 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.net.toFile
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -39,6 +42,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import kotlin.collections.ArrayList
 
 
 class CameraActivity : AppCompatActivity() {
@@ -49,6 +53,7 @@ class CameraActivity : AppCompatActivity() {
     private var imageCapture:ImageCapture? = null
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor:ExecutorService
+    private val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -181,21 +186,47 @@ class CameraActivity : AppCompatActivity() {
 
     fun toActivity(labels: List<Label>) {
         var keysLabels = labels.map({ e -> e.name})
-
+        var namesObject: List<String> =  ArrayList<String>()
         var intent = Intent(this@CameraActivity, ActivityRepeat::class.java)
         if (keysLabels.contains("Bottle") || keysLabels.contains("Plastic")) {
+            var array = arrayListOf<String>("Bottle","Plastic")
+            namesObject = keysLabels.filter { label ->  array.contains(label)}
             intent = Intent(this@CameraActivity, Information_plastic::class.java)
         } else if (keysLabels.contains("Glass") || keysLabels.contains("Wine") || keysLabels.contains("Beverage")) {
+            var array = arrayListOf<String>("Glass","Wine","Beverage")
+            namesObject = keysLabels.filter { label ->  array.contains(label)}
             intent = Intent(this@CameraActivity, Information_glass::class.java)
         } else if (keysLabels.contains("Wood") || keysLabels.contains("Paper")) {
+            var array = arrayListOf<String>("Wood","Paper")
+            namesObject = keysLabels.filter { label ->  array.contains(label)}
             intent = Intent(this@CameraActivity, Information_paper::class.java)
         } else if (keysLabels.contains("food") || keysLabels.contains("dish") || keysLabels.contains("meal")) {
+            var array = arrayListOf<String>("food","dish","meal")
+            namesObject = keysLabels.filter { label ->  array.contains(label)}
             intent = Intent(this@CameraActivity, Information_organic::class.java)
         } else {
             // TODO
         }
+        if (!namesObject.isEmpty()){
+            saveCoincidenciaInFirebase(namesObject)
+        }
         startActivity(intent)
 
+    }
+
+    fun saveCoincidenciaInFirebase(namesObject: List<String>) {
+        val coincidencia = hashMapOf(
+            "uid" to FirebaseAuth.getInstance().currentUser?.uid,
+            "names" to namesObject
+        )
+        db.collection("coincidencias")
+            .add(coincidencia)
+            .addOnSuccessListener { documentReference ->
+                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error adding document", e)
+            }
     }
 
     fun getLabels(photoFile: File) {
