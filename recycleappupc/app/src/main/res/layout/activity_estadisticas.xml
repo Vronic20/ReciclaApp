@@ -4,6 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dfece5"
     tools:context=".EstadisticasActivity">
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart_view"
+        android:layout_width="350dp"
+        android:layout_height="361dp"
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/BtnInicio"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="117dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/barChart_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/recycle" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miraflores"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="Logró reciclar AAA"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
+        app:layout_constraintStart_toEndOf="@+id/imageView20" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="productos en el mes de"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView44"
+        app:layout_constraintStart_toEndOf="@+id/imageView20" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="56dp"
+        android:text="Noviembre"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/barChart_view"
+        app:layout_constraintStart_toEndOf="@+id/imageView20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

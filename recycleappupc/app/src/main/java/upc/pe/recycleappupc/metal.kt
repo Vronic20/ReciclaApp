@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.ms.square.android.expandabletextview.ExpandableTextView
 
 class metal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,11 +37,15 @@ class metal : AppCompatActivity() {
                     true
                 }
                 R.id.ItemStatistics -> {
-                    Toast.makeText(this,"Funciona Estadisticas", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
                     true
                 }
                 else -> {false}
             }
         }
+
+        val expTv: ExpandableTextView = findViewById(R.id.expand_text_view)
+        expTv.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+
     }
 }
