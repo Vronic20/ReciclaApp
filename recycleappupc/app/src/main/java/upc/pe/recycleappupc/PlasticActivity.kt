@@ -36,11 +36,23 @@ class PlasticActivity : AppCompatActivity() {
                     true
                 }
                 R.id.ItemStatistics -> {
-                    Toast.makeText(this,"Funciona Estadisticas", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
                     true
                 }
                 else -> {false}
             }
         }
+
+
+        val expTv = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView)
+        expTv.setText("¿Cuál es el impacto ambiental del plástico? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+
+        val expTv2 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView2)
+        expTv2.setText("¿Cómo puedo reutilizar una botella de plástico? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+
+        val expTv3 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView3)
+        expTv3.setText("¿Qué debo hacer para dejar de consumir plástico? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+
+
     }
 }

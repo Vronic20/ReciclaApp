@@ -131,24 +131,59 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="392dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="¿Cuál es el impacto ambiental de los residuos orgánicos?"
-                    android:textAlignment="inherit"
-                    android:textColor="#1C1B1B" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="392dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="¿Cómo puedo reciclar los residuos orgánicos?"
-                    android:textColor="#1C1B1B" />
-
             </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scroll2"
+                android:layout_width="411dp"
+                android:layout_height="251dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="true"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView2"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="true"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expandableTextView"
+                    app:layout_constraintVertical_bias="0.12" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"

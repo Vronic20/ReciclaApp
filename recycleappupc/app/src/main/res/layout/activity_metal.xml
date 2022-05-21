@@ -132,62 +132,78 @@
                 </LinearLayout>
 
 
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="392dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="¿Por qué reciclamos los metales?"
-                    android:textAlignment="inherit"
-                    android:textColor="#1C1B1B" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="392dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="¿Cuáles son los metales que se pueden reciclar?"
-                    android:textColor="#1C1B1B" />
-
-                <com.ms.square.android.expandabletextview.ExpandableTextView
-                    android:id="@+id/expand_text_view"
-                    android:layout_width="32dp"
-                    android:layout_height="18dp"
-                    android:layout_below="@id/textView"
-                    android:layout_marginTop="10dp"
-                    app:animDuration="200"
-                    app:maxCollapsedLines="4">
-
-                    <TextView
-                        android:id="@id/expandable_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:textColor="#666666"
-                        android:textSize="16sp" />
-
-                    <ImageButton
-                        android:id="@id/expand_collapse"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right|bottom"
-                        android:background="@android:color/transparent"
-                        android:padding="16dp" />
-
-                </com.ms.square.android.expandabletextview.ExpandableTextView>
-
-
-
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="392dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="¿Qué metales no se pueden reciclar?"
-                    android:textColor="#1C1B1B" />
             </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scroll2"
+                android:layout_width="411dp"
+                android:layout_height="251dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="true"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView2"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="true"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expandableTextView"
+                    app:layout_constraintVertical_bias="0.12" />
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView3"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="false"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expandableTextView2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"

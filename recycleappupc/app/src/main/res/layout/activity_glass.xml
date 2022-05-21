@@ -143,7 +143,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/scroll2"
                 android:layout_width="411dp"
-                android:layout_height="221dp"
+                android:layout_height="251dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -154,9 +154,50 @@
                     android:id="@+id/expandableTextView"
                     style="@style/TextAppearance.AppCompat.Body1"
                     android:layout_width="377dp"
-                    android:layout_height="62dp"
+                    android:layout_height="68dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="true"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView2"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:etv_animationTime="20"
+                    app:etv_expandLines="1"
+                    app:etv_showLine="true"
+                    app:etv_textContentColor="#8A000000"
+                    app:etv_textContentSize="14sp"
+                    app:etv_textStateColor="#8A000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expandableTextView"
+                    app:layout_constraintVertical_bias="0.12" />
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView3"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="377dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
                     app:etv_animationTime="20"
                     app:etv_expandLines="1"
                     app:etv_showLine="false"
@@ -167,8 +208,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/expandableTextView2" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
