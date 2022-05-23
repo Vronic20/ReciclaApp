@@ -24,34 +24,17 @@ class PlasticActivity : AppCompatActivity() {
 
             startActivity(shareIntent)
         }
-        val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
-        homeBottomNav.setOnItemSelectedListener {
-            when(it.itemId) {
-                R.id.ItemReconocer -> {
-                    startActivity(Intent(baseContext,CameraActivity::class.java))
-                    true
-                }
-                R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.ItemStatistics -> {
-                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
-                    true
-                }
-                else -> {false}
-            }
-        }
+
 
 
         val expTv = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView)
-        expTv.setText("¿Cuál es el impacto ambiental del plástico? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv.setText("¿Cuál es el impacto ambiental del plástico? \nLos plásticos han tomado la Tierra. Su creciente producción amenaza con contaminar cada rincón del planeta, especialmente los mares, destino final de muchos de ellos. Según la Fundación Ellen MacArthur, si los actuales patrones de producción y consumo de plástico permanecen, en 2050: Habrá más plástico que peces en el océano, aproximadamente 99% de aves habrán ingerido plástico, la basura marina perjudicará a 600 especies marinas. El 15% de especies afectadas por ingestión y enredamiento con basura marina plástica se encontrarán en peligro de extinción.")
 
         val expTv2 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView2)
-        expTv2.setText("¿Cómo puedo reutilizar una botella de plástico? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv2.setText("¿Cómo puedo reutilizar una botella de plástico? \nExisten muchas opciones para darle una segunda vida a las botellas de plástico como hace maceteros, contenedores de todo tipo, entre otras opciones.")
 
         val expTv3 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView3)
-        expTv3.setText("¿Qué debo hacer para dejar de consumir plástico? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv3.setText("¿Qué debo hacer para dejar de consumir plástico? \nEliminar por completo el plástico de nuestras vidas es una tarea difícil, sin embargo, reducir su consumo es más sencillo de lo que parece. Con pequeñas acciones en el día a día, se puede limitar mucho la generación de residuos plásticos como utlizar bolsas reutilizables, evitar comprar agua embotellada, no más pajitas de plástico y limitar los alimentos en recipientes de plástico.")
 
 
     }

@@ -25,33 +25,15 @@ class metal : AppCompatActivity() {
 
             startActivity(shareIntent)
         }
-        val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
-        homeBottomNav.setOnItemSelectedListener {
-            when(it.itemId) {
-                R.id.ItemReconocer -> {
-                    startActivity(Intent(baseContext,CameraActivity::class.java))
-                    true
-                }
-                R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.ItemStatistics -> {
-                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
-                    true
-                }
-                else -> {false}
-            }
-        }
 
         val expTv = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView)
-        expTv.setText("¿Por qué reciclamos los metales? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv.setText("¿Por qué reciclamos los metales? \nSegún la confederación EuRIC, de las industrias del reciclaje en Europa, la producción de materias primas a partir de metales reciclados reduce en un 80% la contaminación del aire, en un 76% la contaminación del agua y en un 40% el uso de agua, y reduce considerablemente las emisiones de CO2 a la atmósfera.")
 
         val expTv2 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView2)
-        expTv2.setText("¿Cuáles son los metales que se pueden reciclar? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv2.setText("¿Cuáles son los metales que se pueden reciclar? \nLos siguientes materiales siempre y cuando estén limpios se pueden reciclar: El hierro se encuentra en puertas, herramientas, tornillos, martillos o adornos; el acero, está muy presente en nuestra vida cotidiana, en electrodomésticos o piezas de coche; el aluminio, se encuentra en platos, papel de aluminio, latas, contenedores, ventanas o utensilios contienen aluminio.")
 
         val expTv3 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView3)
-        expTv3.setText("¿Qué metales no se pueden reciclar? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv3.setText("¿Qué metales no se pueden reciclar? \nAunque casi la mayor parte de los metales se reciclan, existen algunos que no se pueden reutilizar. Tal es el caso de los usados para pinturas o productos tóxicos, tuberías (siempre y cuando no sean de cobre), perchas de ropa y pedacería de metal.")
 
     }
 }

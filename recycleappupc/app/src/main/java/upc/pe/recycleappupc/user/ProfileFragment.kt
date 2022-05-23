@@ -43,6 +43,14 @@ class ProfileFragment : Fragment() {
 
             it.findNavController().navigate(R.id.actionAlarm)
         }
+        binding.btnIndicadores.setOnClickListener{
+
+            it.findNavController().navigate(R.id.actionEstadistica)
+        }
+        binding.imageView.setOnClickListener{
+
+            it.findNavController().navigate(R.id.actionMain)
+        }
     }
 
 }

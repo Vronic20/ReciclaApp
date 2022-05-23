@@ -24,11 +24,11 @@ class Alarm : AppCompatActivity() {
                     true
                 }
                 R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(baseContext,puntos_verdes::class.java))
                     true
                 }
                 R.id.ItemStatistics -> {
-                    Toast.makeText(this,"Funciona Estadisticas", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
                     true
                 }
                 else -> {false}

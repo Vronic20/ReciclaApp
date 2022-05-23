@@ -24,34 +24,27 @@ class paper : AppCompatActivity() {
 
             startActivity(shareIntent)
         }
-        val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
-        homeBottomNav.setOnItemSelectedListener {
-            when(it.itemId) {
-                R.id.ItemReconocer -> {
-                    startActivity(Intent(baseContext,CameraActivity::class.java))
-                    true
-                }
-                R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.ItemStatistics -> {
-                    Toast.makeText(this,"Funciona Estadisticas", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                else -> {false}
-            }
-        }
-
 
         val expTv = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView)
-        expTv.setText("¿Cuál es el impacto ambiental de la fabricación del papel? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv.setText("¿Cuál es el impacto ambiental de la fabricación del papel? \nEl impacto de la fabricación del papel sobre los bosques es pues claro: cada año se cortan muchos millones de árboles solo para fabricar papel. Sumémosles los que se cortan para leña o carpintería, los que arrasan los incendios y los que se destruyen al construir grandes infraestructuras como carreteras. Entonces nos podremos hacer una idea de la alarmante deforestación que está afectando al planeta entero y en nuestro caso concreto a la Amazonía.")
 
         val expTv2 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView2)
-        expTv2.setText("¿Cómo puedo reciclar el papel? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv2.setText("¿Cómo puedo reciclar el papel? \nSe puede reciclar las hojas de papel, folletos, libros, periodicos y revistas, sobres. Etapas para reciclar el papel: \n" +
+                "\n" +
+                "Cortar el papel en trozos pequeños. \n" +
+                "\n" +
+                "Echar los trozos en el recipiente y añadir el doble de agua caliente que de papel. Dejarlos en remojo un rato para que absorban bien el agua. \n" +
+                "\n" +
+                "Licuar hasta obtener una textura de salsa. \n" +
+                "\n" +
+                "Colocamos la mezcla en una malla con ayuda de una cuchara. Podemos usar un rodillo para hacerlo más fácil. \n" +
+                "\n" +
+                "Quitar el exceso de agua con una esponja y dejar que seque. \n" +
+                "\n" +
+                "")
 
         val expTv3 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView3)
-        expTv3.setText("¿Cómo dejar de desperdiciar el papel? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv3.setText("¿Cómo dejar de desperdiciar el papel? \nComo resultado del impacto negativo que tiene el papel sobre el medio ambiente, en la actualidad se han desarrollado nuevas formas de contrarrestar el uso excesivo del papel como reducir el uso diario de papel, aprovechar la tecnología y digitalizar sus procesos (firma electrónica, formularios digitales, etc.)")
 
 
     }

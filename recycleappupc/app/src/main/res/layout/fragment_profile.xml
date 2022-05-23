@@ -19,9 +19,9 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/txtNombre"
@@ -35,8 +35,7 @@
             android:id="@+id/txtUbicacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Miraflores"
-            android:gravity="center"/>
+            android:gravity="center" />
 
         <Button
             android:id="@+id/btnAlarma"

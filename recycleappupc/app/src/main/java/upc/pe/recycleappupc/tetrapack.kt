@@ -24,23 +24,7 @@ class tetrapack : AppCompatActivity() {
 
             startActivity(shareIntent)
         }
-        val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
-        homeBottomNav.setOnItemSelectedListener {
-            when(it.itemId) {
-                R.id.ItemReconocer -> {
-                    startActivity(Intent(baseContext,CameraActivity::class.java))
-                    true
-                }
-                R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.ItemStatistics -> {
-                    Toast.makeText(this,"Funciona Estadisticas", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                else -> {false}
-            }
-        }
+        val expTv = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView)
+        expTv.setText("¿Cuál es el impacto ambiental del tetrapack? \nSi no se recicla el Tetra Pak, éste puede tardar hasta 35 años en degradarse, y si tomamos en cuenta que en México se producen más de 60 millones de envases de Tetra Pak al año, el daño ecológico puede ser muy importante.")
     }
 }

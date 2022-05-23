@@ -24,31 +24,12 @@ class organic : AppCompatActivity() {
 
             startActivity(shareIntent)
         }
-        val homeBottomNav = findViewById<BottomNavigationView>(R.id.home_buttom_navigation)
-        homeBottomNav.setOnItemSelectedListener {
-            when(it.itemId) {
-                R.id.ItemReconocer -> {
-                    startActivity(Intent(baseContext,CameraActivity::class.java))
-                    true
-                }
-                R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.ItemStatistics -> {
-                    startActivity(Intent(baseContext,EstadisticasActivity::class.java))
-                    true
-                }
-                else -> {false}
-            }
-        }
-
 
         val expTv = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView)
-        expTv.setText("¿Cuál es el impacto ambiental de residuos orgánicos? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv.setText("¿Cuál es el impacto ambiental de residuos orgánicos? \nReciclar residuos orgánicos ayuda a reducir el impacto ambiental. La mayoría de estos residuos son desechos de comida, restos vegetales que provienen de la recogida municipal y comercial de nuestras ciudades, así como de las industrias agroalimentarias y derivados.")
 
         val expTv2 = findViewById<ru.embersoft.expandabletextview.ExpandableTextView>(R.id.expandableTextView2)
-        expTv2.setText("¿Cómo puedo reciclar los residuos orgánicos? \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        expTv2.setText("¿Cómo puedo reciclar los residuos orgánicos? \nEs posible transformar los residuos sólidos orgánicos industriales o domiciliarios en abono gracias al compostaje. El compost puede utilizarse como abono y aportar grandes beneficios ambientales, ya que necesita una menor cantidad de energía para su producción, no genera otros desechos en su proceso y permite aprovechar los residuos orgánicos como nuevos recursos, y por lo tanto, se disminuye el volumen de residuos dispuestos en rellenos sanitarios.")
 
     }
 }

@@ -20,6 +20,12 @@
         <action
             android:id="@+id/actionAlarm"
             app:destination="@id/alarm" />
+        <action
+            android:id="@+id/actionEstadistica"
+            app:destination="@id/estadisticasActivity" />
+        <action
+            android:id="@+id/actionMain"
+            app:destination="@id/homeActivity2" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
@@ -31,4 +37,14 @@
         android:name="upc.pe.recycleappupc.Alarm"
         android:label="activity_alarm"
         tools:layout="@layout/activity_alarm" />
+    <activity
+        android:id="@+id/estadisticasActivity"
+        android:name="upc.pe.recycleappupc.EstadisticasActivity"
+        android:label="activity_estadisticas"
+        tools:layout="@layout/activity_estadisticas" />
+    <activity
+        android:id="@+id/homeActivity2"
+        android:name="upc.pe.recycleappupc.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 </navigation>

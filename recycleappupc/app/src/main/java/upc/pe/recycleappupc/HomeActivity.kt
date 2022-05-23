@@ -51,7 +51,7 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.ItemGreenPoints -> {
-                    Toast.makeText(this,"Funciona Puntos Verdes",Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(baseContext,puntos_verdes::class.java))
                     true
                 }
                 R.id.ItemStatistics -> {
