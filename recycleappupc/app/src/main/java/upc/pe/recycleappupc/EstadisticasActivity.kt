@@ -53,6 +53,7 @@ class EstadisticasActivity : AppCompatActivity() {
             valueList.add(15.0)
             valueList.add(8.0)
             valueList.add(7.0)
+            valueList.add(2.0)
             //valueList.add(3.1)
             //valueList.add(9.1)
             //valueList.add(1.1)
@@ -66,7 +67,7 @@ class EstadisticasActivity : AppCompatActivity() {
         val barDataSet = BarDataSet(entries, title)
         val data = BarData(barDataSet)
         barChart.setData(data)
-        barDataSet.setColors(*ColorTemplate.LIBERTY_COLORS)
+        barDataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
         barChart.xAxis.isEnabled = false
         barChart.axisRight.isEnabled = false
         barChart.legend.isEnabled = true
