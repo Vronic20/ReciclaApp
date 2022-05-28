@@ -38,7 +38,8 @@ class ProductFragment : Fragment() {
          }
 
         binding.editBuscar.setOnClickListener{
-            var text = binding.editBuscar.text.toString().toLowerCase();
+            var text = binding.editBuscar.text.toString().toLowerCase()
+            binding.editBuscar.text.clear()
             if (listOf("papel","carton").contains(text)) {
                 startActivity(Intent(view.context, Information_paper::class.java))
             } else if (text == "comida") {
