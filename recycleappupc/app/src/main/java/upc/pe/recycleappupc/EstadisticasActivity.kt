@@ -2,12 +2,13 @@ package upc.pe.recycleappupc
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mikephil.charting.charts.BarChart
+import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.utils.ColorTemplate
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import upc.pe.recycleappupc.databinding.ActivityEstadisticasBinding
@@ -16,6 +17,7 @@ import upc.pe.recycleappupc.databinding.ActivityEstadisticasBinding
 class EstadisticasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityEstadisticasBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,35 +47,53 @@ class EstadisticasActivity : AppCompatActivity() {
 
     private fun showBarChart() {
         val valueList = ArrayList<Double>()
+        val xAxisLabel = ArrayList<String>()
         val entries: ArrayList<BarEntry> = ArrayList()
-        val title = "Residuos"
+        val title = "Productos reciclables!"
         var barChart = this.findViewById<BarChart>(R.id.barChart_view)
 
         //input data
-            valueList.add(15.0)
-            valueList.add(8.0)
-            valueList.add(7.0)
-            valueList.add(2.0)
-            //valueList.add(3.1)
-            //valueList.add(9.1)
-            //valueList.add(1.1)
-            //valueList.add(5.1)
+            valueList.add(3.1)
+            valueList.add(9.1)
+            valueList.add(1.1)
+            valueList.add(5.1)
+            valueList.add(5.1)
+
+        // input label
+            xAxisLabel.add("Metal")
+            xAxisLabel.add("Vidrio")
+            xAxisLabel.add("Orgánico")
+            xAxisLabel.add("Papel")
+            xAxisLabel.add("Plástico")
+
 
         //fit the data into a bar
         for (i in 0 until valueList.size) {
             val barEntry = BarEntry(i.toFloat(), valueList[i].toFloat())
             entries.add(barEntry)
         }
+
+
         val barDataSet = BarDataSet(entries, title)
         val data = BarData(barDataSet)
         barChart.setData(data)
+        val xAxis = barChart.getXAxis()
         barDataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
-        barChart.xAxis.isEnabled = false
         barChart.axisRight.isEnabled = false
         barChart.legend.isEnabled = true
         barChart.description.isEnabled = false
         barChart.animateY(3000)
+
+        xAxis.setGranularity(1f)
+        xAxis.setGranularityEnabled(true)
+        xAxis.setDrawGridLines(false)
+        xAxis.textSize = 9f
+
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM)
+        xAxis.setValueFormatter(IndexAxisValueFormatter(xAxisLabel))
+
         barChart.invalidate()
     }
+
 
 }

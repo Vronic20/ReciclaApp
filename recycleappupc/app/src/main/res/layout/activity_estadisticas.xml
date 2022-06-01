@@ -10,8 +10,8 @@
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChart_view"
-        android:layout_width="350dp"
-        android:layout_height="361dp"
+        android:layout_width="328dp"
+        android:layout_height="401dp"
         android:layout_margin="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/home_buttom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
