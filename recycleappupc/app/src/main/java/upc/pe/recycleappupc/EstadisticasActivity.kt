@@ -49,15 +49,15 @@ class EstadisticasActivity : AppCompatActivity() {
         val valueList = ArrayList<Double>()
         val xAxisLabel = ArrayList<String>()
         val entries: ArrayList<BarEntry> = ArrayList()
-        val title = "Productos reciclables!"
+        val title = "Productos reciclables"
         var barChart = this.findViewById<BarChart>(R.id.barChart_view)
 
         //input data
-            valueList.add(3.1)
-            valueList.add(9.1)
-            valueList.add(1.1)
-            valueList.add(5.1)
-            valueList.add(5.1)
+            valueList.add(4.0)
+            valueList.add(6.0)
+            valueList.add(6.0)
+            valueList.add(6.0)
+            valueList.add(8.0)
 
         // input label
             xAxisLabel.add("Metal")
