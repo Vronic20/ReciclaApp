@@ -16,8 +16,9 @@ class BroadcastReceiver: BroadcastReceiver() {
             notifyMe.Notify(context!!, "¡El camion de basura está en su destino!",10)
         }
         else if (intent!!.action.equals("android.intent.action.BOOT_COMPLETED")){
+            // TODO ¿Para qué sirve?
             val saveData = SaveData(context!!)
-            saveData.setAlarm()
+            //saveData.setAlarm()
         }
 
     }
